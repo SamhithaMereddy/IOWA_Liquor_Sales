@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="89" y="41" width="817" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 30</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffcaca" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="114" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" FileFormat="23">odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* 
+from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales</File>
+              <FormatSpecificOptions>
+                <PreSQL />
+                <PreSQLOnConfig>True</PreSQLOnConfig>
+                <NoProgress>True</NoProgress>
+                <SessionReadOnly>True</SessionReadOnly>
+                <CacheData>False</CacheData>
+                <TableStyle>Quoted</TableStyle>
+                <ReadUncommitted>False</ReadUncommitted>
+                <PostSQL />
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=BigQuery
+Query=select DAMG_Lowa_Liquour_Sal...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="invoice_and_item_number" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="date" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Date" />
+                <Field name="store_number" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="store_name" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="address" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="city" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="zip_code" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="store_location" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="county_number" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="county" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="category" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="category_name" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="vendor_number" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="vendor_name" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="item_number" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="item_description" size="16384" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="V_WString" />
+                <Field name="pack" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Int64" />
+                <Field name="bottle_volume_ml" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Int64" />
+                <Field name="state_bottle_cost" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Double" />
+                <Field name="state_bottle_retail" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Double" />
+                <Field name="bottles_sold" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Int64" />
+                <Field name="sale_dollars" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Double" />
+                <Field name="volume_sold_liters" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Double" />
+                <Field name="volume_sold_gallons" source="File: odbc:DSN=BigQuery|||select DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales.* &#xA;from DAMG_Lowa_Liquour_Sales.Lowa_Liquor_Sales DAMG_Lowa_Liquour_Sales_Lowa_Liquor_Sales" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="270" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="invoice_and_item_number" selected="True" />
+                <SelectField field="date" selected="True" />
+                <SelectField field="store_number" selected="True" type="Int64" size="8" />
+                <SelectField field="store_name" selected="True" />
+                <SelectField field="address" selected="True" />
+                <SelectField field="city" selected="True" />
+                <SelectField field="zip_code" selected="True" />
+                <SelectField field="store_location" selected="True" />
+                <SelectField field="county_number" selected="True" type="Int64" size="8" />
+                <SelectField field="county" selected="True" />
+                <SelectField field="category" selected="True" />
+                <SelectField field="category_name" selected="True" />
+                <SelectField field="vendor_number" selected="True" />
+                <SelectField field="vendor_name" selected="True" />
+                <SelectField field="item_number" selected="True" />
+                <SelectField field="item_description" selected="True" />
+                <SelectField field="pack" selected="True" />
+                <SelectField field="bottle_volume_ml" selected="True" />
+                <SelectField field="state_bottle_cost" selected="True" />
+                <SelectField field="state_bottle_retail" selected="True" />
+                <SelectField field="bottles_sold" selected="True" />
+                <SelectField field="sale_dollars" selected="True" />
+                <SelectField field="volume_sold_liters" selected="True" />
+                <SelectField field="volume_sold_gallons" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="414" y="89" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="'IowaLiquourSales_DataPrep'" field="DI_WorkflowFileName" size="64" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = 'IowaLiquourSales_DataPrep'
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="534" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="True" />
+              <InputFieldName>date</InputFieldName>
+              <Language>English</Language>
+              <Format>yyyy-MM-dd</Format>
+              <OutputFieldName>NewDate_Dt</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert date To:
+yyyy-MM-dd</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="654" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="774" y="90" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:Localhost|||Lowa_Liquor.dbo.stg_iowa_liquor_sales_bigquery_alteryx</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Overwrite</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:Localhost
+Query=Lowa_Liquor.dbo.stg_iowa_liq...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Lowa_Liquor_Sales_BigQuery_StgTable</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2d19d4f6-214a-4f31-8a9f-d152debcfd89" />
+      <Telemetry>
+        <PreviousWorkflowId value="df7771ee-1724-48ef-8c55-517b8a1c9219" />
+        <OriginWorkflowId value="8278af25-f524-402d-82a9-8e06bf58cc44" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
